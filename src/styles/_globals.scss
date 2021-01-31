@@ -1,0 +1,45 @@
+// Reset
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// Flexbox
+.flex {
+    display: flex;
+
+    &-jc-sb  {
+        justify-content: space-between;
+    }
+
+    &-jc-c   {
+        justify-content: center;
+    }
+
+    &-ai-c   {
+        align-items    : center;
+    }
+
+    &-fd-col {
+        flex-direction : column;
+    }
+}
+
+// Backgrounds
+.header-bgi-home {
+    background-image: url('../images/background-home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-bgi-facilities {
+    background-image: url('../images/background-facilities.jpg');
+}
+.header-bgi-rooms {
+    background-image: url('../images/background-rooms.jpg');
+}

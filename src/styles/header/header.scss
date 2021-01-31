@@ -1,0 +1,59 @@
+.header {
+    width: 100%;
+    height: 1080px;
+    &-wrapper {
+        width: 1500px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        width: 256px;
+        height: 149px;
+        background-color: $secondary;
+        border-radius: 0 0 55px 55px;
+
+        &__title {
+            @include font($font: $garamond, $size: 40px, $lh: 100%, $color: $primary);
+            letter-spacing: 6px;
+        }
+        &__subtitle {
+            @include font($font: $garamond, $size: 15px, $lh: 100%, $color: $primary);
+            letter-spacing: 9.6px;
+        }
+    }
+
+    &__links {
+        width: 700px;
+        & li {
+            list-style-type: none;
+            display: inline;
+        }
+        &__link {
+            text-decoration: none;
+            @include font($font: $montBold, $size: 25px, $lh: normal, $color: $white);
+            &:hover {
+                border-bottom: 2px solid $white;
+            }
+        }
+    }
+    &__headline {
+        width: 700px;
+        &__overtitle {
+            @include font($font: $montReg, $size: 50px, $lh: normal, $color: $white);
+        }
+        &__title {
+            @include font($font: $garamond, $size: 154px, $lh: 100%, $color: $white);
+            letter-spacing: 10.78px;
+        }
+        &__subtitle {
+            @include font($font: $garamond, $size: 60px, $lh: 100%, $color: $white);
+            letter-spacing: 24px;
+        }
+        & p {
+            @include font($font: $montReg, $size: 25px, $lh: normal, $color: $white);
+            letter-spacing: 2.5px;
+        }
+    }
+}
+
