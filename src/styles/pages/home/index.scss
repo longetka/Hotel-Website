@@ -1,0 +1,18 @@
+@import 'card';
+
+main {
+    height: 1836px;
+    width: 1570px;
+    margin: 0 auto;
+
+    h3 {
+        text-align: center;
+        @include font(
+            $font: $montReg, 
+            $size: 36px, 
+            $lh: normal, 
+            $color: $primary
+        );
+    }
+}
+

@@ -35,19 +35,21 @@ html {
     }
 }
 
-// Backgrounds
-.header-bgi-home {
-    background-image: url('../images/background-home.jpg');
+// Headers Background
+.header-bgi-home,
+.header-bgi-facilities,
+.header-bgi-rooms {
+    background-color: $secondary30;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: color;
+}
+.header-bgi-home {
+    background-image: url('../images/background-home.jpg');
 }
 .header-bgi-facilities {
     background-image: url('../images/background-facilities.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .header-bgi-rooms {
     background-image: url('../images/background-rooms.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }

@@ -1,4 +1,7 @@
-@import "../fonts/fonts.css";
-@import "_variables";
-@import "header/header";
-@import "_globals";
+@import "_variables";         // import SCSS Variables
+@import "_globals";           // import Styles and normalize for all pages
+@import "../fonts/fonts.css"; // import Fonts
+@import "components/header";  // import HEADER page-component
+                              // import FOOTER page-component
+
+@import "pages/home/index"    // import HOME-page styles

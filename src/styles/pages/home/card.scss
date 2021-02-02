@@ -1,0 +1,22 @@
+.card {
+    width: 100%;
+
+    &__image {
+        width: 866px;
+        height: 579px;
+    }
+}
+
+.img1, .img2 {
+    background-repeat: no-repeat;
+}
+
+.img1 {
+    background-image: url('../images/home-card-img1.jpg');
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url('../images/home-card-img2.jpg');
+    background-size: cover;
+}
