@@ -18,6 +18,10 @@ html {
         justify-content: space-between;
     }
 
+    &-jc-sa {
+        justify-content: space-around;
+    }
+
     &-jc-c   {
         justify-content: center;
     }
@@ -39,7 +43,11 @@ html {
 }
 .header-bgi-facilities {
     background-image: url('../images/background-facilities.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .header-bgi-rooms {
     background-image: url('../images/background-rooms.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
