@@ -1,24 +1,22 @@
 extends layout.pug
 
 block content
-    include components/header.pug
+    include components/header
     main.flex.flex-fd-col.flex-jc-sa.flex-ai-c
         h3 All our room types are including complementary breakfast
-        .card.flex.flex-jc-sb
-            .card__text
+        .card.flex.flex-jc-sb.flex-ai-c
+            .card__text.flex.flex-jc-sb.flex-fd-col
                 .card__text__title
                     h5 Luxury redefined
                 .card__text__subtitle
-                    p Our rooms are designed 
-                    | to transport you into an environment
-                    | made for leisure. Take your mind off 
-                    | the day-to-day of home life and find
-                    | a private paradise for yourself.
-                .card__text__button
-                    button EXPLORE
+                    p Our rooms are designed to transport
+                    | you into an environment made for leisure.
+                    | Take your mind off the day-to-day of home
+                    | life and find a private paradise for yourself.
+                button.card__text__button.btn-hover EXPLORE
             .card__image.img1
-        .card.flex.flex-jc-sb
-            .card__text
+        .card.flex.flex-jc-sb.flex-ai-c
+            .card__text.flex.flex-jc-sb.flex-fd-col
                 .card__text__title
                     h5 Leave your worries in the sand
                 .card__text__subtitle
@@ -27,14 +25,14 @@ block content
                     | sandy beach ensures a relaxed state 
                     | of mind. It seems like time stands 
                     | still watching the ocean.
-                .card__text__button
-                    button EXPLORE
+                button.card__text__button.btn-hover EXPLORE
             .card__image.img2
-        .testis
+        .testis.flex.flex-fd-col.flex-jc-sb.flex-ai-c
             h5.testis__title Testimonials
-            p.testis__cite__text "Calm, Serene, Retro – What a way to relax and enjoy"
-            p.testis__cite_author  Mr. and Mrs. Baxter, UK
-            .slider
-                button.slider__left
-                button.slider__right
+            p.testis__textCite "Calm, Serene, Retro – What a way to relax and enjoy"
+            p.testis__authorCite  Mr. and Mrs. Baxter, UK
+            .slider.flex.flex-jc-sb
+                button.slider__btn.leftArrow.btn-hover
+                button.slider__btn.rightArrow.btn-hover
+    include components/footer
 

@@ -2,6 +2,6 @@
 @import "_globals";           // import Styles and normalize for all pages
 @import "../fonts/fonts.css"; // import Fonts
 @import "components/header";  // import HEADER page-component
-                              // import FOOTER page-component
+@import "components/footer";  // import FOOTER page-component
 
 @import "pages/home/index"    // import HOME-page styles

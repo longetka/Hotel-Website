@@ -1,4 +1,11 @@
 @import 'card';
+@import 'testis';
+@import 'slider';
+
+.card__text__title,
+.testis__title {
+    @include font($font: $garamond, $size: 60px, $lh: normal, $color: $primary);
+}
 
 main {
     height: 1836px;

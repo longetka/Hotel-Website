@@ -4,6 +4,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    width: 99vw;
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -39,7 +43,7 @@ html {
 .header-bgi-home,
 .header-bgi-facilities,
 .header-bgi-rooms {
-    background-color: $secondary30;
+    background-color: $primary30;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: color;
@@ -52,4 +56,12 @@ html {
 }
 .header-bgi-rooms {
     background-image: url('../images/background-rooms.jpg');
+}
+
+// BUTTONS HOVER
+.btn-hover {
+    transition: background-color .3s ease-out;
+    &:hover {
+        background-color: #e9ad46;
+    }
 }

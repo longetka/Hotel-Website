@@ -1,10 +1,41 @@
 .card {
     width: 100%;
+    
+    &__text {
+        border-left: 2px solid $primary;
+        padding-left: 48.5px;
+        flex-basis: 50%;
+        height: auto;
+
+        &__title, &__subtitle { 
+            width: 540px;
+            padding-bottom: 20px;
+        }
+        &__title {
+            letter-spacing: 1.2px;
+        }
+        &__subtitle {
+            @include font($font: $montReg, $size: 25px, $lh: 40px, $color: $primary);
+        }
+
+        &__button {
+            width: 236px;
+            height: 63px;
+
+            border: none;
+            border-radius: 10px;
+            background-color: $secondary;
+
+            @include font($font: $montReg, $size: 20px, $lh: normal, $color: $white);
+            letter-spacing: 1px;
+        }
+    }
 
     &__image {
-        width: 866px;
+        flex-basis: 866px;
         height: 579px;
     }
+    
 }
 
 .img1, .img2 {

@@ -1,0 +1,18 @@
+.testis {
+    width: 800px;
+    height: 257px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__textCite {
+        @include font($font: $montReg, $size: 30px, $lh: normal, $color: $primary);
+    }
+    &__authorCite {
+        @include font($font: $montReg, $size: 25px, $lh: normal, $color: $primary);
+    }
+    &__textCite, &__authorCite {
+        text-align: center;
+    }
+}
