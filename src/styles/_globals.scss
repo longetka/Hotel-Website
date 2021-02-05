@@ -65,3 +65,19 @@ body {
         background-color: #e9ad46;
     }
 }
+
+// FOOTER SOCIAL ICONS
+.icon-facebook, .icon-twitter, .icon-instagram {
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+}
+.icon-facebook {
+    background-image: url('../images/icon-facebook.svg');
+}
+.icon-twitter {
+    background-image: url('../images/icon-twitter.svg');
+}
+.icon-instagram {
+    background-image: url('../images/icon-instagram.svg');
+}

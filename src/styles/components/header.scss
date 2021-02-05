@@ -32,6 +32,7 @@
         &__link {
             text-decoration: none;
             @include font($font: $montBold, $size: 25px, $lh: normal, $color: $white);
+            transition: border .2s ease-out;
             &:hover {
                 border-bottom: 3px solid $white;
             }
