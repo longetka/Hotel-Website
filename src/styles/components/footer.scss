@@ -1,4 +1,80 @@
 .footer {
+    height: 321px;
+    padding-top: 144px;
     background-color: $primary;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0px 54px, 900px 54px, 960px 0px, 1020px 54px, 100% 54px, 100% 100%, 0px 100%);
+
+    &__contacts {
+        &__minilogo {
+            width: 37%;
+            margin-bottom: 22px;
+            & h4 {
+                @include font($font: $garamond, $size: 25px, $lh: normal, $color: $white);
+                letter-spacing: 3.75px;
+            }
+            & p {
+                @include font($font: $garamond, $size: 9px, $lh: normal, $color: $white);
+                letter-spacing: 5.4px;
+                text-align: center;
+            }
+        }
+        &__contact {
+            @include font($font: $montReg, $size: 14px, $lh: normal, $color: $white);
+            & address, & a {
+                text-decoration: none;
+                color: $white;
+                font-style: normal;
+            }
+        }
+    }
+
+    &__links, &__social {
+        list-style-type: none;
+        li a {
+            text-decoration: none;
+            @include font($font: $montReg, $size: 16px, $lh: normal, $color: $white);
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+    }
+    &__links {
+        & li {
+            padding-bottom: 20px;
+        }
+    }
+    &__social {
+        & li {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__subscribe {
+        & h5, & form input {
+            @include font($font: $montReg, $size: 16px, $lh: normal, $color: $white);
+        }
+        & form button {
+            @include font($font: $montReg, $size: 16px, $lh: normal, $color: $primary);
+        }
+        & h5 {
+            padding-bottom: 29px;
+        } 
+        & form {
+            & input {
+                width: 280px;
+                height: 52px;
+                padding-left: 25px;
+                background-color: $primary;
+                border: 2px solid $secondary;
+                border-radius: 5px 0 0 5px;
+            }
+            & button {
+                width: 80px;
+                height: 52px;
+                background-color: $secondary;
+                border: none;
+                border-radius: 0 5px 5px 0;
+
+            }
+        }
+    }
 }

@@ -1,7 +1,12 @@
-footer.footer
+footer.footer.flex.flex-jc-sa
     .footer__contacts
-        .footer__contacts__logo
-        .footer__contacts__contact
+        .footer__contacts__minilogo
+            h4 LUXURY
+            p HOTELS
+        .footer__contacts__contact.flex.flex-fd-col
+            address 497 Evergreen Rd. Roseville, CA 95673
+            a(href="tel:+44 345 678 903") +44 345 678 903
+            a(href="mailto:luxury_hotels@gmail.com") luxury_hotels@gmail.com
     ul.footer__links
         li
             a(href="/about-us") About Us
@@ -11,17 +16,17 @@ footer.footer
             a(href="/terms-and-conditions") Terms &amp; Conditions
     ul.footer__social
         li
-            a.footer__social__link(href="http://facebook.com") Facebook
+            a.footer__social__link.flex(href="http://facebook.com") Facebook
                 .icon-facebook
         li
-            a.footer__social__link(href="http://twitter.com") Twitter
+            a.footer__social__link.flex(href="http://twitter.com") Twitter
                 .icon-twitter
         li
-            a.footer__social__link(href="http://instagram.com") Instagram
+            a.footer__social__link.flex(href="http://instagram.com") Instagram
                 .icon-instagram
     .footer__subscribe
-        h5.footer__subscribe__title Subscribe to our newsletter
-        form.footer__subscribe__form
-            input(type="email" name="email")
+        h5 Subscribe to our newsletter
+        form
+            input(type="email" name="email" placeholder="Email Address")
             button(type="submit") OK
             
