@@ -3,7 +3,7 @@ extends layout.pug
 block content
     header.header.header-bgi-home
         include components/header
-    main.flex.flex-fd-col.flex-jc-sa.flex-ai-c
+    main.home.flex.flex-fd-col.flex-jc-sa.flex-ai-c
         h3 All our room types are including complementary breakfast
         .card.flex.flex-jc-sb.flex-ai-c
             .card__text.flex.flex-jc-sb.flex-fd-col
@@ -28,12 +28,6 @@ block content
                     | still watching the ocean.
                 button.card__text__button.btn-hover EXPLORE
             .card__image.img2
-        .testis.flex.flex-fd-col.flex-jc-sb.flex-ai-c
-            h5.testis__title Testimonials
-            p.testis__textCite "Calm, Serene, Retro – What a way to relax and enjoy"
-            p.testis__authorCite  Mr. and Mrs. Baxter, UK
-            .slider.flex.flex-jc-sb
-                button.slider__btn.leftArrow.btn-hover
-                button.slider__btn.rightArrow.btn-hover
+        include components/testis
     include components/footer
 

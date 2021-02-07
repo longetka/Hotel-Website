@@ -40,22 +40,24 @@ body {
 }
 
 // Headers Background
-.header-bgi-home,
-.header-bgi-facilities,
-.header-bgi-rooms {
-    background-color: $primary30;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: color;
-}
-.header-bgi-home {
-    background-image: url('../images/background-home.jpg');
-}
-.header-bgi-facilities {
-    background-image: url('../images/background-facilities.jpg');
-}
-.header-bgi-rooms {
-    background-image: url('../images/background-rooms.jpg');
+.header {
+    &-bgi-gome,
+    &-bgi-facilities,
+    &-bgi-rooms {
+        background-color: $primary30;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: color;
+    }
+    &-bgi-home {
+        background-image: url('../images/background-home.jpg');
+    }
+    &-bgi-facilities {
+        background-image: url('../images/background-facilities.jpg');
+    }
+    &-bgi-rooms {
+        background-image: url('../images/background-rooms.jpg');
+    }
 }
 
 // BUTTONS HOVER
@@ -67,18 +69,45 @@ body {
 }
 
 // FOOTER SOCIAL ICONS
-.icon-facebook, .icon-twitter, .icon-instagram {
-    width: 19px;
-    height: 19px;
-    background-repeat: no-repeat;
-    padding-right: 35px;
+.icon {
+    &-facebook,
+    &-twitter,
+    &-instagram {
+        width: 19px;
+        height: 19px;
+        background-repeat: no-repeat;
+        padding-right: 35px;
+    }
+    &-facebook {
+        background-image: url('../images/icon-facebook.svg');
+    }
+    &-twitter {
+        background-image: url('../images/icon-twitter.svg');
+    }
+    &-instagram {
+        background-image: url('../images/icon-instagram.svg');
+    }
 }
-.icon-facebook {
-    background-image: url('../images/icon-facebook.svg');
-}
-.icon-twitter {
-    background-image: url('../images/icon-twitter.svg');
-}
-.icon-instagram {
-    background-image: url('../images/icon-instagram.svg');
+
+// FACILITIES CARD IMAGES
+.image {
+    
+    &-gym {
+        background-image: url('../images/facilities-gym.jpg');
+    }
+    &-poolsideBar {
+        background-image: url('../images/facilities-poolside-bar.jpg');
+    }
+    &-spa {
+        background-image: url('../images/facilities-spa.jpg');
+    }
+    &-swimPool {
+        background-image: url('../images/facilities-swim-pool.jpg');
+    }
+    &-restaurant {
+        background-image: url('../images/facilities-restaurant.jpg');
+    }
+    &-laundry {
+        background-image: url('../images/facilities-laundry.jpg');
+    }
 }

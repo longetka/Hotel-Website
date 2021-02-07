@@ -6,9 +6,17 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 const plugins = [];
 plugins.push(new CleanWebpackPlugin());
-plugins.push(new HtmlWebpackPlugin({
-    template: './src/templates/index.pug',
-}));
+plugins.push(
+    new HtmlWebpackPlugin({
+        title: 'Hotel Website | Home',
+        filename: 'index.html',
+        template: './src/templates/index.pug',
+    }),
+    new HtmlWebpackPlugin({
+        title: 'Hotel Website | Facilities',
+        filename: 'facilities.html',
+        template: './src/templates/facilities.pug'
+    }));
 if (!devMode) {
     // enable in production only
     plugins.push(new MiniCssExtractPlugin());
