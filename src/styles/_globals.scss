@@ -41,7 +41,7 @@ body {
 
 // Headers Background
 .header {
-    &-bgi-gome,
+    &-bgi-home,
     &-bgi-facilities,
     &-bgi-rooms {
         background-color: $primary30;
@@ -91,9 +91,17 @@ body {
 
 // FACILITIES CARD IMAGES
 .image {
+    &-gym, &-poolsideBar, &-spa, &-swimPool, &-restaurant, &-laundry {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &-poolsideBar, &-spa, &-swimPool, &-restaurant, &-laundry {
+        margin-top: 186px;
+    }
     
     &-gym {
         background-image: url('../images/facilities-gym.jpg');
+        margin-top: 82px;
     }
     &-poolsideBar {
         background-image: url('../images/facilities-poolside-bar.jpg');
@@ -109,5 +117,6 @@ body {
     }
     &-laundry {
         background-image: url('../images/facilities-laundry.jpg');
+        margin-bottom: 113px;
     }
 }

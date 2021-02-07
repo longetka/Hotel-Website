@@ -9,8 +9,9 @@ block content
             p We want your stay at our lush hotel to be truly unforgettable.  That is why we give special attention to all of your needs so 
                 | that we can ensure an experience quite uniquw. Luxury hotels offers the perfect setting with stunning views for leisure
                 | and our modern luxury resort facilities will help you enjoy the best of all. 
-        .facilities__card
-            .facilities__card__photo.image-gym
-                .facilities__card__title THE GYM
+        each val, key in { gym: "THE GYM", poolsideBar: "POOLSIDE BAR", spa: "THE SPA", swimPool: "SWIMMING POOL", restaurant: "RESTAURANT", laundry: "LAUNDRY" }
+            .facilities__card
+                .facilities__card__photo.flex.flex-jc-c(class= 'image-' + key)
+                    .facilities__card__title.flex.flex-jc-c.flex-ai-c= val
         include components/testis
     include components/footer

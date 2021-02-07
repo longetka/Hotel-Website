@@ -1,0 +1,15 @@
+.facilities__card {
+    width: 100%;
+    &__photo {
+        width: 100%;
+        height: 1052px;
+        align-items: flex-end;
+    }
+    &__title {
+        @include font($font: $montBold, $size: 48px, $lh: normal, $color: $primary);
+        background-color: $white;
+        text-align: center;
+        width: 684px;
+        height: 75px;
+    }
+}
