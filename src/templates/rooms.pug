@@ -1,0 +1,28 @@
+extends layout.pug 
+
+block content
+    header.header.header-bgi-rooms
+        include components/header
+    main.rooms.flex.flex-fd-col.flex-ai-c.flex-jc-c
+        .main-header
+            h3 ROOMS AND RATES
+            p Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes, 
+             | comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented 
+             | by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces. 
+        .rooms__wrapper
+            .rooms__card
+                .rooms__card__image.flex
+                    .rooms__card__title.flex.flex-ai-c.flex-jc-c SINGLE ROOM
+                    .rooms__card__slider
+                .rooms__footer 
+                    .rooms__footer__details
+                        button
+                            .plus
+                            .minus
+                        p VIEW ROOM DETAILS
+                    .rooms__footer__orderBtn
+                        button &#36; Avg/night
+
+
+        include components/testis
+    include components/footer

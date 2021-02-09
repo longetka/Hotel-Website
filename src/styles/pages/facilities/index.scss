@@ -3,16 +3,4 @@
 .facilities {
     width: 1580px;
     margin: 0 auto;
-
-    &__textBlock {
-        & h3, & p {
-            text-align: center;
-        }
-        h3 {
-            @include font($font: $garamond, $size: 60px, $lh: normal, $color: $primary);
-        }
-        p {
-            @include font($font: $montReg, $size: 25px, $lh: normal, $color: $primary);
-        }
-    }
 }

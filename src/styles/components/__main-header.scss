@@ -1,0 +1,12 @@
+.main-header {
+    margin-top: 81px;
+    & h3, & p {
+        text-align: center;
+    }
+    & h3 {
+        @include font($font: $garamond, $size: 60px, $lh: normal, $color: $primary);
+    }
+    & p {
+        @include font($font: $montReg, $size: 25px, $lh: normal, $color: $primary);
+    }
+}

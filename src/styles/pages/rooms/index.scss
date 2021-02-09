@@ -1,0 +1,51 @@
+.rooms {
+    width: 1604px;
+    margin: 0 auto;
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__card {
+        width: 100%;
+        height: 1302px;
+        border: 2px solid $primary;
+        border-radius: 0 0 15px 15px;
+
+        &__image {
+            background-image: url('../images/rooms-single-room.jpg');
+            width: 100%;
+            height: 1067px;
+            align-items: flex-end;
+        }
+        &__title {
+            background-color: $primary;
+            height: 141px;
+            width: 100%;
+            @include font($font: $montBold, $size: 60px, $lh: normal, $color: $white);
+        }
+    }
+    
+    &__footer {
+
+        &__details {
+
+            & button {
+                width: 51px;
+                height: 51px;
+                border-radius: 50%;
+                border: none;
+                background-color: $secondary;
+            }
+        }
+    }
+}
+
+.plus {
+    transform: rotate(90deg);    
+}
+.minus, .plus {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+}

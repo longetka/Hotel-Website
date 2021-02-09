@@ -16,7 +16,13 @@ plugins.push(
         title: 'Hotel Website | Facilities',
         filename: 'facilities.html',
         template: './src/templates/facilities.pug'
-    }));
+    }),
+    new HtmlWebpackPlugin({
+        title: 'Hotel Website | Rooms',
+        filename: 'rooms.html',
+        template: './src/templates/rooms.pug'
+    }),
+    );
 if (!devMode) {
     // enable in production only
     plugins.push(new MiniCssExtractPlugin());
