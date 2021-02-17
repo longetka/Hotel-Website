@@ -1,0 +1,10 @@
+.contactUs {
+    margin-top: 261px;
+    &__title {
+        margin: 47px 0px 171px 0px;
+        @include font($font: $montBold, $size: 80px, $lh: normal, $color: $white);
+        text-align: center;
+    }
+    @import "__textBlock";
+    @import "./__section/__section";
+}

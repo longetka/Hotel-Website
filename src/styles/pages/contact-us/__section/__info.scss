@@ -1,0 +1,22 @@
+&__info {
+        
+    & a:not(.viewMap-link),
+    & address {
+        @include font($font: $montReg, $size: 40px, $lh: normal, $color: $primary);
+    }
+    & a {
+        text-decoration: none;
+    }
+    & address {
+        width: 570px;
+        font-style: normal;
+    }
+    .viewMap-link {
+        @include font($font: $montBold, $size: 40px, $lh: normal, $color: $primary);
+        margin: 28px 0px 54px 0px;
+        &:after {
+            content: url('../images/arrow.svg');
+            transform: translate(30px, 8px);
+        }
+    }
+}

@@ -58,6 +58,9 @@ body {
     &-bgi-rooms {
         background-image: url('../images/background-rooms.jpg');
     }
+    &-bg-contactUs {
+        background-color: $primary;
+    }
 }
 
 // BUTTONS HOVER

@@ -1,0 +1,28 @@
+extends layout.pug
+
+block content
+    header.header-bg-contactUs
+        .header-wrapper.flex.flex-jc-sb.flex-fd-col
+            include components/header/header-nav
+            h1.contactUs__title CONTACT-US
+    main.contactUs.flex.flex-fd-col.flex-ai-c
+        .contactUs__textBlock 
+            h3 WE ARE HERE FOR YOU
+            p At Luxury Hotels, we take our customers seriously. Do you have any enquiries, compaints or requests, 
+             | please forward it to our support desk and we will get back to you as soon as possible.
+        section.contactUs__section.flex.flex-jc-sb
+            .contactUs__section__info.flex.flex-fd-col
+                address 497 Evergreen Rd. Roseville, 
+                 | CA 95673
+                a.viewMap-link.flex(href="#") View map
+                a(href="tel:+44345678903") Phone +44345678903
+                a(href="mailto:luxury_hotels@gmail.com") luxury_hotels@gmail.com
+            form.contactUs__section__form.flex.flex-fd-col
+                label Name
+                input(type="text", name="name")
+                label Email Address
+                input(type="email", name="email")
+                label Message 
+                textarea(name="message", cols="30", rows="23") 
+                button(type="submit") Submit
+    include components/footer.pug

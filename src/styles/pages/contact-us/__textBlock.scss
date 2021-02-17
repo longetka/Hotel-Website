@@ -1,0 +1,9 @@
+&__textBlock {
+    width: 80%;
+    & h3 {
+        @include font($font: $garamond, $size: 60px, $lh: normal, $color: $primary);
+    }
+    & p {
+        @include font($font: $montReg, $size: 30px, $lh: normal, $color: $primary);
+    }
+}

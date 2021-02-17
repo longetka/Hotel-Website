@@ -22,6 +22,11 @@ plugins.push(
         filename: 'rooms.html',
         template: './src/templates/rooms.pug'
     }),
+    new HtmlWebpackPlugin({
+        title: 'Hotel Website | Contact-us',
+        filename: 'contact-us.html',
+        template: './src/templates/contact-us.pug'
+    }),
     );
 if (!devMode) {
     // enable in production only
