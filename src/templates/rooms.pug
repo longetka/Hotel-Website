@@ -10,18 +10,19 @@ block content
              | comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented 
              | by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces. 
         .rooms__wrapper
-            .rooms__card
-                .rooms__card__image.flex
-                    .rooms__card__title.flex.flex-ai-c.flex-jc-c SINGLE ROOM
-                    .rooms__card__slider
-                .rooms__footer 
-                    .rooms__footer__details
-                        button
-                            .plus
-                            .minus
-                        p VIEW ROOM DETAILS
-                    .rooms__footer__orderBtn
-                        button &#36; Avg/night
+            each val, key in { singleRoom: ["SINGLE ROOM", "$147"], doubleRoom: ["DOUBLE ROOM", "$155"], twinRoom: ["TWIN ROOM", "$157"] }
+                    .rooms__card
+                        .rooms__card__image.flex(class= 'image-' + key)
+                            .rooms__card__title.flex.flex-ai-c.flex-jc-c= val[0]
+                            .rooms__card__slider
+                        .rooms__footer.flex.flex-ai-c.flex-jc-sa
+                            .rooms__footer__details.flex.flex-ai-c.flex-jc-sb
+                                button
+                                    .plus
+                                    .minus
+                                p VIEW ROOM DETAILS
+                            .rooms__footer__orderBtn
+                                button= val[1] + ' Avg/night'
 
 
         include components/testis

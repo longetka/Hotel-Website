@@ -120,3 +120,21 @@ body {
         margin-bottom: 113px;
     }
 }
+
+// ROOMS CARD IMAGES
+.image {
+    &-singleRoom, &-doubleRoom, &-twinRoom {
+        width: 100%;
+        height: 1067px;
+        align-items: flex-end;
+    }
+    &-singleRoom {
+        background-image: url('../images/rooms-single-room.jpg');
+    }
+    &-doubleRoom {
+        background-image: url('../images/rooms-double-room.jpg');
+    }
+    &-twinRoom {
+        background-image: url('../images/rooms-twin-room.jpg');
+    }
+}
